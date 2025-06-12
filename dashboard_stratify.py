@@ -144,29 +144,32 @@ menu = st.sidebar.radio(
 # Logo en la esquina superior izquierda
 st.sidebar.markdown(
     """
-         </div>
-              </div>
-                   </div>
-                        </div>
-                             </div>
     <style>
+        /* Ajustamos el contenedor del logo */
         .logo-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 15px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+            z-index: 100;
         }
+
         .logo-container img {
-            height: 100px;
+            height: 80px;
+        }
+
+        /* Limita el contenedor del sidebar para que no solape el contenido */
+        section[data-testid="stSidebar"] {
+            position: relative;
         }
     </style>
+
     <div class="logo-container">
-        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Logotipo%20STRATIFY.png?raw=true">
+        <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Logotipo%20STRATIFY.png">
     </div>
     """,
     unsafe_allow_html=True
 )
-
 # ========== TÍTULO CON LOGO CENTRADO Y ELEGANTE ==========
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
