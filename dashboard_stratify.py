@@ -187,7 +187,6 @@ image_base64 = get_base64_image("StratifyLogo.png")
             <img src='data:image/png;base64,{image_base64}' width='200'
                  style='margin-bottom: 15px; border-radius: 16px;
                         box-shadow: 0 6px 20px rgba(0,0,0,0.15);'/>
-            if menu != "Inicio":
             <h1 style='font-family: "Segoe UI", sans-serif; margin-bottom: 0;'>Ximple – Dashboard de Comportamiento Crediticio</h1>
             <h3 style='color: #bfa14c; font-weight: normal; margin-top: 0;'>{cluster_names[cluster_sel]}</h3>
         </div>
