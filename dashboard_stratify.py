@@ -102,7 +102,7 @@ st.sidebar.markdown(
             margin-bottom: 15px;
         }
         .logo-container img {
-            height: 40px;
+            height: 100px;
         }
     </style>
     <div class="logo-container">
