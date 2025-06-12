@@ -199,13 +199,13 @@ if menu == "Resumen de Clusters":
     st.markdown("""
     Los clusters agrupan a las Aliadas según su comportamiento crediticio, no por contacto ni comunicación.
 
-    - **Cluster 0** – *Aliadas con pagos frecuentes y pocos atrasos*.
+    - **Cluster 1** – *Aliadas con pagos frecuentes y pocos atrasos*.
         - Realizan muchos préstamos con tiempos cortos entre cada uno.
         - Aunque tienen mora su comportamiento es muy activo y estable.
-    - **Cluster 1** – *Aliadas con alto volumen y alta morosidad*.
+    - **Cluster 2** – *Aliadas con alto volumen y alta morosidad*.
         - Muchas llamadas con mora alta y pagos tardíos.
         - Son clientes con comportamiento más riesgoso.
-    - **Cluster 2** – *Aliadas de baja actividad crediticia*.
+    - **Cluster 3** – *Aliadas de baja actividad crediticia*.
         - Tienen pocas cuotas pagadas y un bajo volumen de préstamos.
         - Uso esporádico o poco intensivo del sistema.
 
