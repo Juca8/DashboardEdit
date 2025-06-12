@@ -273,8 +273,7 @@ if menu == "Conócenos":
     st.markdown("""
     <div style="background-color:black; height: 40px; margin-top: 40px; border-radius: 5px;"></div>
     """, unsafe_allow_html=True)
-     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
-
+    
 
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
