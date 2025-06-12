@@ -213,9 +213,9 @@ if menu == "Inicio":
     """, unsafe_allow_html=True)
 
     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
-      st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
-      st.markdown("""
-     <p style='color:black; font-size:16px;'>
+    st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    <p style='color:black; font-size:16px;'>
      Nuestros hallazgos revelaron que aproximadamente el 20% de las Aliadas generan la mayor parte de la actividad crediticia. Estas usuarias de alto uso suelen solicitar préstamos en intervalos cortos y muestran un comportamiento estratégico. Recomendamos:
     
     • Enfocar los esfuerzos de segmentación en las usuarias intensivas para aumentar la retención y maximizar el valor a largo plazo.
