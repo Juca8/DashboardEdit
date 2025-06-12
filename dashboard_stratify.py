@@ -254,7 +254,7 @@ if menu == "Conócenos":
     <br>
     """, unsafe_allow_html=True)
 
-    # Galería de imágenes y nombres (puedes reemplazar los enlaces)
+    # Galería de imágenes y nombres reales
     st.markdown("""
     <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
 
@@ -285,8 +285,6 @@ if menu == "Conócenos":
     st.markdown("""
     <div style="background-color:black; height: 40px; margin-top: 40px; border-radius: 5px;"></div>
     """, unsafe_allow_html=True)
-
-    
 
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
