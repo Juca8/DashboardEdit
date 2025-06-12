@@ -27,11 +27,7 @@ st.markdown("""
         background-color: #1e1e1e !important;
     }
 
-    /* Forzar color blanco en todo el contenido del sidebar */
-    [data-testid="stSidebar"] * {
-        color: black !important;
-    }
-    
+
   
 
     /* Botones generales */
