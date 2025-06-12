@@ -145,22 +145,22 @@ menu = st.sidebar.radio(
 st.sidebar.markdown(
     """
     <style>
-        /* Ajustamos el contenedor del logo */
+        /* Aseguramos que el sidebar sea relativo para posicionamiento absoluto interno */
+        section[data-testid="stSidebar"] {
+            position: relative;
+        }
+
+        /* Estilo del contenedor del logo */
         .logo-container {
             position: fixed;
             bottom: 0;
-            right: 0;
+            left: 0;
             padding: 10px;
             z-index: 100;
         }
 
         .logo-container img {
             height: 80px;
-        }
-
-        /* Limita el contenedor del sidebar para que no solape el contenido */
-        section[data-testid="stSidebar"] {
-            position: relative;
         }
     </style>
 
