@@ -113,20 +113,26 @@ df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 st.markdown(
     """
     <style>
-        /* Color del texto de todas las opciones */
-        .stRadio > div div {
+        /* Color del texto de las opciones */
+        .stRadio > div > div > label {
             color: white;
         }
 
-        /* Cambiar color del círculo seleccionado */
-        div[data-baseweb="radio"] > div > label[data-selected="true"] div:first-child {
+        /* Estilo personalizado del círculo seleccionado (más profundo) */
+        div[data-baseweb="radio"] label[data-selected="true"] div[role="presentation"] {
             background-color: #d4b14c !important;
             border: 1px solid #d4b14c !important;
         }
 
-        /* Cambiar color del borde del círculo cuando se pasa el mouse (opcional) */
-        div[data-baseweb="radio"] > div > label:hover div:first-child {
-            border-color: #d4b14c !important;
+        /* Color del círculo NO seleccionado (solo para prueba) */
+        div[data-baseweb="radio"] label div[role="presentation"] {
+            border: 1px solid white !important;
+        }
+
+        /* Opcional: cambiar color del texto del botón seleccionado */
+        div[data-baseweb="radio"] label[data-selected="true"] span {
+            color: #d4b14c !important;
+            font-weight: bold;
         }
     </style>
     """,
