@@ -194,9 +194,9 @@ st.markdown(
 )
   #========== NUEVA SECCIÓN: INICIO ==========
 if menu == "Inicio":
-    st.markdown("<h2 style='color:#d4b14c;'>📌 Introduction / Context</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#d4b14c;'> Introduction / Context</h2>", unsafe_allow_html=True)
     st.markdown("""
-    <p style='color:white; font-size:16px;'>
+    <p style='color:black; font-size:16px;'>
     At Ximple, we believe that understanding the consumption behavior of our <strong>Aliadas</strong>—our commercial allies—is essential for sustainable growth. 
     This project seeks to answer a critical question: <em>how can we use data to better understand and anticipate loan usage?</em><br><br>
     Through data analysis, visualization, and machine learning, we identified patterns in demand and usage, segmented users into behavioral clusters, 
@@ -207,7 +207,7 @@ if menu == "Inicio":
 
     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
 
-    st.markdown("<h2 style='color:#d4b14c;'>✅ Conclusions & Recommendations</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
     st.markdown("""
     <p style='color:white; font-size:16px;'>
     Our findings revealed that approximately <strong>20% of Aliadas</strong> drive the majority of loan activity. These high-usage users often request 
