@@ -137,7 +137,7 @@ menu = st.sidebar.radio(
     options=[
         "Inicio",
         "Conócenos",
-         "Resultados Modelo ML",
+        "Resultados Modelo ML",
         "Resumen de Clusters",
         "Comportamiento de Demanda",
         "Calidad de Pagos",
@@ -325,7 +325,7 @@ if menu == "Resumen de Clusters":
 
 
 # ========== MÉTRICAS ==========
-if menu not in ["Inicio", "Conócenos"]:
+if menu not in ["Inicio", "Conócenos","Resultados Modelo ML"]:
     st.subheader("Métricas del Cluster")
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Aliadas", len(df_cluster))
