@@ -249,7 +249,7 @@ if menu == "Comportamiento de Demanda":
     tipo_prestamo = df_cluster.groupby(["LoanType", "RecipientType"]).size().reset_index(name="count")
     src1 = ColumnDataSource(tipo_prestamo)
     fig1 = figure(x_range=tipo_prestamo["LoanType"].unique(), width=800, height=400, title="Tipo de Préstamo")
-    fig1.title.text_font_size = "20pt"  # Tamaño
+    fig1.title.text_font_size = "16pt"  # Tamaño
     fig1.title.text_font_style = "bold"  # Negritas
     fig1.vbar(x="LoanType", top="count", width=0.7, source=src1,
               legend_field="RecipientType",
@@ -267,6 +267,8 @@ if menu == "Comportamiento de Demanda":
         prestamos_mes["Mes"] = prestamos_mes["Mes"].apply(lambda x: calendar.month_abbr[int(x)])
         src5 = ColumnDataSource(prestamos_mes)
         fig5 = figure(x_range=prestamos_mes["Mes"], width=800, height=400, title="Estacionalidad de Préstamos")
+        fig5.title.text_font_size = "16pt"  # Tamaño
+        fig5.title.text_font_style = "bold"  # Negritas
         fig5.vbar(x="Mes", top="Total", width=0.6, source=src5, color="#bfa14c")
         st.bokeh_chart(fig5, use_container_width=True)
 
@@ -275,6 +277,8 @@ if menu == "Comportamiento de Demanda":
         freq.columns = ["Frecuencia", "Total"]
         src6 = ColumnDataSource(freq)
         fig6 = figure(x_range=freq["Frecuencia"], width=800, height=400, title="Frecuencia de Pago")
+        fig6.title.text_font_size = "16pt"  # Tamaño
+        fig6.title.text_font_style = "bold"  # Negritas
         fig6.vbar(x="Frecuencia", top="Total", width=0.6, source=src6, color="#bfa14c")
         st.bokeh_chart(fig6, use_container_width=True)
 
