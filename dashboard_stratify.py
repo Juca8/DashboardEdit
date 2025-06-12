@@ -500,7 +500,7 @@ elif menu == "Predicción de Intensivas":
             st.error(f"Error al predecir: {e}")
 # ========== ML Results ==========
 if menu == "Resultados Modelo ML":
-    st.markdown("<h2 style='color:#d4b14c;'>ML Results</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#d4b14c;'>📊 ML Results</h2>", unsafe_allow_html=True)
     
     st.markdown("""
     <p style='color:black; font-size:16px;'>
@@ -548,7 +548,17 @@ if menu == "Resultados Modelo ML":
     </ul>
     Using GridSearchCV, we tuned regularization strength and penalty type. The final model reached a balanced accuracy of <strong>99.74%</strong> with high interpretability.
     </p>
+    """, unsafe_allow_html=True)
 
+    # Imagen insertada fuera del bloque de texto
+    st.markdown("""
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/ML.png" style="max-width: 90%; height: auto; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Última parte del contenido
+    st.markdown("""
     <h4 style='color:#d4b14c;'>5. Clustering & Behavioral Segmentation</h4>
     <p style='color:black; font-size:16px;'>
     We performed unsupervised clustering using <strong>K-Means + PCA</strong> based only on loan behavior:
@@ -568,11 +578,6 @@ if menu == "Resultados Modelo ML":
     These profiles enable personalized solutions, optimized resource allocation, and better product targeting strategies.
     </p>
     """, unsafe_allow_html=True)
-
-
-
-
-
 
 
 # ========== FOOTER ==========
