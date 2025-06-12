@@ -113,14 +113,19 @@ df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 st.markdown(
     """
     <style>
-        /* Cambia color del texto de las opciones de radio */
+        /* Color del texto de todas las opciones */
         .stRadio > div div {
             color: white;
         }
 
-        /* Cambia el color del radio button seleccionado a dorado */
-        [data-baseweb="radio"] label[data-selected="true"] > div:first-child {
+        /* Cambiar color del círculo seleccionado */
+        div[data-baseweb="radio"] > div > label[data-selected="true"] div:first-child {
             background-color: #d4b14c !important;
+            border: 1px solid #d4b14c !important;
+        }
+
+        /* Cambiar color del borde del círculo cuando se pasa el mouse (opcional) */
+        div[data-baseweb="radio"] > div > label:hover div:first-child {
             border-color: #d4b14c !important;
         }
     </style>
