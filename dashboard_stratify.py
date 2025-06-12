@@ -209,7 +209,7 @@ if menu == "Inicio":
 
     st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
     st.markdown("""
-    <p style='color:white; font-size:16px;'>
+    <p style='color:black; font-size:16px;'>
     Our findings revealed that approximately <strong>20% of Aliadas</strong> drive the majority of loan activity. These high-usage users often request 
     loans within short intervals and exhibit strategic behavior. We recommend:<br><br>
     • Focus segmentation efforts on <strong>intensive users</strong> to increase retention and maximize long-term value.<br>
