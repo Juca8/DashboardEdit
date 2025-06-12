@@ -97,24 +97,6 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
-st.markdown("""
-    <style>
-    /* Texto dentro del campo seleccionado del selectbox */
-    .stSelectbox div[data-baseweb="select"] > div {
-        color: white !important;
-    }
-
-    /* Texto de la opción seleccionada */
-    .stSelectbox span {
-        color: black !important;
-    }
-
-    /* Fondo blanco del cuadro y del dropdown */
-    .stSelectbox div[data-baseweb="select"] {
-        background-color: white !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
 st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
