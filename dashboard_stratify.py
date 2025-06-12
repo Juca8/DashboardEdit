@@ -137,14 +137,17 @@ menu = st.sidebar.radio(
     options=[
         "Inicio",
         "Conócenos",
+         "Resultados Modelo ML",
         "Resumen de Clusters",
         "Comportamiento de Demanda",
         "Calidad de Pagos",
         "Distribución Geográfica",
         "Predicción de Intensivas"
+       
     ],
     key="menu_radio"
 )
+
 # Logo en la esquina superior izquierda
 st.sidebar.markdown(
     """
