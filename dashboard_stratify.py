@@ -255,7 +255,7 @@ if menu == "Conócenos":
     """, unsafe_allow_html=True)
 
     # Galería de imágenes y nombres reales
-    st.markdown("""
+    st.markdown('''
 <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
 
     <div style='margin: 10px;'>
@@ -279,8 +279,7 @@ if menu == "Conócenos":
     </div>
 
 </div>
-""", unsafe_allow_html=True)
-
+''', unsafe_allow_html=True)
 
     # Pie de página negro
     st.markdown("""
