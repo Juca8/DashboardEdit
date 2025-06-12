@@ -101,7 +101,7 @@ st.markdown("""
     <style>
     /* Texto dentro del campo seleccionado del selectbox */
     .stSelectbox div[data-baseweb="select"] > div {
-        color: black !important;
+        color: white !important;
     }
 
     /* Texto de la opción seleccionada */
