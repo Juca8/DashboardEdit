@@ -107,7 +107,7 @@ cluster_names = {
 cluster_display = [f"{k} – {v}" for k, v in cluster_names.items()]
 
 # Etiqueta del selectbox personalizada
-st.sidebar.markdown("<p style='color:white; font-size:18px; font-weight:bold;'>Selecciona el tipo de Aliada:", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='color:black; font-size:18px; font-weight:bold;'>Selecciona el tipo de Aliada:", unsafe_allow_html=True)
 cluster_str = st.sidebar.selectbox("", cluster_display)
 
 cluster_sel = int(cluster_str.split(" – ")[0])
