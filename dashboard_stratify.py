@@ -222,6 +222,7 @@ if menu == "Inicio":
     """, unsafe_allow_html=True)
 
     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
+    
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
     st.subheader("¿Qué significan los Clusters?")
@@ -266,12 +267,12 @@ if menu == "Resumen de Clusters":
 
 
 # ========== MÉTRICAS ==========
-st.subheader("Métricas del Cluster")
-col1, col2, col3 = st.columns(3)
-col1.metric("Total Aliadas", len(df_cluster))
-col2.metric("% Intensivas", f"{100 * df_cluster['intensive_use'].astype(int).mean():.1f}%")
-col3.metric("Prom. días entre préstamos", f"{df_cluster['dias_promedio'].mean():.1f} días")
-
+if menu != "Inicio":
+    st.subheader("Métricas del Cluster")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Total Aliadas", len(df_cluster))
+    col2.metric("% Intensivas", f"{100 * df_cluster['intensive_use'].astype(int).mean():.1f}%")
+    col3.metric("Prom. días entre préstamos", f"{df_cluster['dias_promedio'].mean():.1f} días")
 # ========== GRÁFICAS SEGMENTADAS ==========
 if menu == "Comportamiento de Demanda":
     st.subheader("Comportamiento de Demanda")
