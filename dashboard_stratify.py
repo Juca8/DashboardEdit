@@ -97,7 +97,7 @@ st.sidebar.markdown(
     <style>
         .logo-container {
             display: flex;
-            justify-content: flex-start;
+            justify-content: flex-end;
             align-items: center;
             margin-bottom: 15px;
         }
