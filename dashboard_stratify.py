@@ -97,6 +97,23 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
+st.markdown(
+    """
+    <style>
+    /* Forzar que el texto visible dentro del selectbox sea negro */
+    div[data-baseweb="select"] > div {
+        color: black !important;
+        background-color: white !important;
+    }
+
+    /* Asegurar que el texto seleccionado también sea negro */
+    .stSelectbox span {
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
