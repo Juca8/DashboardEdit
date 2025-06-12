@@ -194,7 +194,7 @@ st.markdown(
 )
 
 # Mostrar título y subtítulo solo si no es "Inicio"
-if menu != "Inicio":
+if menu not in ["Inicio", "Conócenos"]:
     st.markdown(
         f"""
         <div style='text-align: center; padding-bottom: 30px;'>
@@ -331,12 +331,13 @@ if menu == "Resumen de Clusters":
 
 
 # ========== MÉTRICAS ==========
-if menu != "Inicio" :
+if menu not in ["Inicio", "Conócenos"]:
     st.subheader("Métricas del Cluster")
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Aliadas", len(df_cluster))
     col2.metric("% Intensivas", f"{100 * df_cluster['intensive_use'].astype(int).mean():.1f}%")
     col3.metric("Prom. días entre préstamos", f"{df_cluster['dias_promedio'].mean():.1f} días")
+
 # ========== GRÁFICAS SEGMENTADAS ==========
 if menu == "Comportamiento de Demanda":
     st.subheader("Comportamiento de Demanda")
