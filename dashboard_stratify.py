@@ -97,24 +97,6 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
-st.markdown(
-    """
-    <style>
-    /* Forzar que el texto visible dentro del selectbox sea negro */
-    div[data-baseweb="select"] > div {
-        color: black !important;
-        background-color: white !important;
-    }
-
-    /* Asegurar que el texto seleccionado también sea negro */
-    .stSelectbox span {
-        color: black !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
@@ -137,15 +119,24 @@ df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 st.markdown(
     """
     <style>
-        /* Cambia color del texto de las opciones de radio */
+        /* Texto de radio buttons en blanco */
         .stRadio > div div {
             color: white;
+        }
+
+        /* Texto dentro del selectbox en negro */
+        div[data-baseweb="select"] > div {
+            color: black !important;
+            background-color: white !important;
+        }
+
+        .stSelectbox span {
+            color: black !important;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 st.sidebar.markdown(
     """
     <div style='margin-top: 30px; margin-bottom: 10px;'>
