@@ -97,18 +97,8 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
-st.markdown(
-    """
-    <style>
-        /* Cambia color del texto de las opciones de radio */
-        .stRadio > div div {
-            color: black;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-st.sidebar.markdown("<h2 style='color:black; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
+
+st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
     0: "Pagos Frecuentes y Pocos Atrasos",
@@ -118,7 +108,7 @@ cluster_names = {
 cluster_display = [f"{k} – {v}" for k, v in cluster_names.items()]
 
 # Etiqueta del selectbox personalizada
-st.sidebar.markdown("<p style='color:black; font-size:18px; font-weight:bold;'>Selecciona el tipo de Aliada:", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='color:white; font-size:18px; font-weight:bold;'>Selecciona el tipo de Aliada:", unsafe_allow_html=True)
 cluster_str = st.sidebar.selectbox("", cluster_display)
 
 cluster_sel = int(cluster_str.split(" – ")[0])
