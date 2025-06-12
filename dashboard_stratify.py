@@ -96,9 +96,10 @@ df = load_data()
 st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
-    0: "Pagos Frecuentes y Pocos Atrasos",
-    1: "Alto Volumen y Alta Morosidad",
-    2: "Baja Actividad Crediticia"
+    0:"Introduccion",
+    1: "Pagos Frecuentes y Pocos Atrasos",
+    2: "Alto Volumen y Alta Morosidad",
+    3: "Baja Actividad Crediticia"
 }
 cluster_display = [f"{k} – {v}" for k, v in cluster_names.items()]
 
