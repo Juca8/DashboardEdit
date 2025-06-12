@@ -145,7 +145,10 @@ menu = st.sidebar.radio(
 st.sidebar.markdown(
     """
          </div>
-
+              </div>
+                   </div>
+                        </div>
+                             </div>
     <style>
         .logo-container {
             display: flex;
