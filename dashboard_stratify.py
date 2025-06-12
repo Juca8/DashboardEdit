@@ -106,7 +106,7 @@ st.sidebar.markdown(
         }
     </style>
     <div class="logo-container">
-        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(2).png?raw=true">
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Logotipo%20STRATIFY.png?raw=true">
     </div>
     """,
     unsafe_allow_html=True
