@@ -193,40 +193,41 @@ st.markdown(
     unsafe_allow_html=True
 )
   #========== NUEVA SECCIÓN: INICIO ==========
-st.markdown("<h2 style='color:#d4b14c;'>📌 Introduction</h2>", unsafe_allow_html=True)
-st.markdown("""
-<p style='color:black; font-size:16px;'>
- En Ximple, creemos que comprender el comportamiento de consumo de nuestras <strong>Aliadas</strong> —nuestras aliadas comerciales— es esencial para un crecimiento sostenible. 
-Este proyecto representa un esfuerzo por aprovechar el poder del análisis de datos, la visualización y el aprendizaje automático para transformar la forma en que se entiende y gestiona la demanda de préstamos. 
-Hemos desarrollado un dashboard interactivo que permite a los tomadores de decisiones pasar de respuestas reactivas a estrategias proactivas, personalizando el soporte y optimizando la asignación de recursos.
-</p>
-""", unsafe_allow_html=True)
-
-st.markdown("<h3 style='color:#d4b14c;'>🔍 Situación / Problema</h3>", unsafe_allow_html=True)
-st.markdown("""
-<p style='color:black; font-size:16px;'>
-¿Cómo podemos usar los datos disponibles para anticipar y entender el uso de préstamos entre nuestras Aliadas?<br><br>
- Aunque Ximple cuenta con registros históricos de préstamos, aún no se había aprovechado plenamente su valor para predecir patrones de uso, identificar usuarias estratégicas o adaptar las operaciones según la estacionalidad o el tipo de cliente. 
-Esta falta de enfoque predictivo limitaba la capacidad de asignar recursos de manera eficiente, personalizar estrategias de contacto o desarrollar productos financieros ajustados al comportamiento real de las usuarias.
- </p>
- """, unsafe_allow_html=True)
-
-  st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
-  st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
-  st.markdown("""
- <p style='color:black; font-size:16px;'>
- Nuestros hallazgos revelaron que aproximadamente el 20% de las Aliadas generan la mayor parte de la actividad crediticia. Estas usuarias de alto uso suelen solicitar préstamos en intervalos cortos y muestran un comportamiento estratégico. Recomendamos:
-
-• Enfocar los esfuerzos de segmentación en las usuarias intensivas para aumentar la retención y maximizar el valor a largo plazo.
-• Integrar variables predictivas como el intervalo entre préstamos, el tipo de producto y la región en los dashboards para respaldar decisiones operativas.
-• Utilizar XIMPLE FIJO como producto de entrada y XIMPLE OPTIMIZA para clientas más maduras.
-• Preparar las operaciones para los picos de demanda de fin de año.
-
-Al implementar internamente el modelo predictivo y las herramientas visuales, Ximple puede pasar de una analítica descriptiva a una estrategia proactiva, mejorando la experiencia del cliente y la eficiencia operativa.
- </p>
-""", unsafe_allow_html=True)
-
- st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
+if menu == "Inicio":
+    st.markdown("<h2 style='color:#d4b14c;'>📌 Introduction</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    <p style='color:black; font-size:16px;'>
+     En Ximple, creemos que comprender el comportamiento de consumo de nuestras <strong>Aliadas</strong> —nuestras aliadas comerciales— es esencial para un crecimiento sostenible. 
+    Este proyecto representa un esfuerzo por aprovechar el poder del análisis de datos, la visualización y el aprendizaje automático para transformar la forma en que se entiende y gestiona la demanda de préstamos. 
+    Hemos desarrollado un dashboard interactivo que permite a los tomadores de decisiones pasar de respuestas reactivas a estrategias proactivas, personalizando el soporte y optimizando la asignación de recursos.
+    </p>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<h3 style='color:#d4b14c;'>🔍 Situación / Problema</h3>", unsafe_allow_html=True)
+    st.markdown("""
+    <p style='color:black; font-size:16px;'>
+    ¿Cómo podemos usar los datos disponibles para anticipar y entender el uso de préstamos entre nuestras Aliadas?<br><br>
+     Aunque Ximple cuenta con registros históricos de préstamos, aún no se había aprovechado plenamente su valor para predecir patrones de uso, identificar usuarias estratégicas o adaptar las operaciones según la estacionalidad o el tipo de cliente. 
+    Esta falta de enfoque predictivo limitaba la capacidad de asignar recursos de manera eficiente, personalizar estrategias de contacto o desarrollar productos financieros ajustados al comportamiento real de las usuarias.
+     </p>
+     """, unsafe_allow_html=True)
+    
+      st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
+      st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
+      st.markdown("""
+     <p style='color:black; font-size:16px;'>
+     Nuestros hallazgos revelaron que aproximadamente el 20% de las Aliadas generan la mayor parte de la actividad crediticia. Estas usuarias de alto uso suelen solicitar préstamos en intervalos cortos y muestran un comportamiento estratégico. Recomendamos:
+    
+    • Enfocar los esfuerzos de segmentación en las usuarias intensivas para aumentar la retención y maximizar el valor a largo plazo.
+    • Integrar variables predictivas como el intervalo entre préstamos, el tipo de producto y la región en los dashboards para respaldar decisiones operativas.
+    • Utilizar XIMPLE FIJO como producto de entrada y XIMPLE OPTIMIZA para clientas más maduras.
+    • Preparar las operaciones para los picos de demanda de fin de año.
+    
+    Al implementar internamente el modelo predictivo y las herramientas visuales, Ximple puede pasar de una analítica descriptiva a una estrategia proactiva, mejorando la experiencia del cliente y la eficiencia operativa.
+     </p>
+    """, unsafe_allow_html=True)
+    
+     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
     
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
