@@ -552,7 +552,7 @@ if menu == "Resultados Modelo ML":
 
     # Imagen insertada fuera del bloque de texto
     st.markdown("""
-    <div style="text-align: center;">
+    <div style="text-align: left;">
         <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/ML.png" style="max-width: 90%; height: auto; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     </div>
     """, unsafe_allow_html=True)
