@@ -28,8 +28,6 @@ st.markdown("""
     }
 
 
-  
-
     /* Botones generales */
     .metric-label, .metric-value, .stButton>button, .stDownloadButton>button {
         color: white !important;
