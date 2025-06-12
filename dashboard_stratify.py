@@ -106,7 +106,7 @@ st.sidebar.markdown(
         }
     </style>
     <div class="logo-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Tec_de_Monterrey_logo.svg">
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.png?raw=true">
     </div>
     """,
     unsafe_allow_html=True
