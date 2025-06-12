@@ -193,7 +193,7 @@ st.markdown(
     unsafe_allow_html=True
 )
   #========== NUEVA SECCIÓN: INICIO ==========
-st.markdown("<h2 style='color:#d4b14c;'>📌 Introduction</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#d4b14c;'>📌 Introduction</h2>", unsafe_allow_html=True)
     st.markdown("""
     <p style='color:black; font-size:16px;'>
     En Ximple, creemos que comprender el comportamiento de consumo de nuestras <strong>Aliadas</strong> —nuestras aliadas comerciales— es esencial para un crecimiento sostenible. 
