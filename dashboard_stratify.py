@@ -71,7 +71,7 @@ st.markdown("""
     [data-testid="stSidebar"] .stSelectbox,
     [data-testid="stSidebar"] .stRadio {
         border-radius: 8px;
-        color: white !important;
+        color: black !important;
     }
 
      .titulo-container {
