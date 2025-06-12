@@ -254,19 +254,9 @@ if menu == "Conócenos":
     <br>
     """, unsafe_allow_html=True)
 
-    # Galería de imágenes y nombres
+    # Galería de imágenes y nombres (puedes reemplazar los enlaces)
     st.markdown("""
     <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
-
-        <div style='margin: 10px;'>
-            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Edgar Vega</p>
-        </div>
-
-        <div style='margin: 10px;'>
-            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Eduardo Hernández</p>
-        </div>
 
         <div style='margin: 10px;'>
             <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
@@ -275,7 +265,17 @@ if menu == "Conócenos":
 
         <div style='margin: 10px;'>
             <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Juan Rodrigo Amezcua</p>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Edgar Vega</p>
+        </div>
+
+        <div style='margin: 10px;'>
+            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Rodrigo Amezcua</p>
+        </div>
+
+        <div style='margin: 10px;'>
+            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Eduardo Hernández</p>
         </div>
 
     </div>
@@ -285,6 +285,7 @@ if menu == "Conócenos":
     st.markdown("""
     <div style="background-color:black; height: 40px; margin-top: 40px; border-radius: 5px;"></div>
     """, unsafe_allow_html=True)
+
     
 
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
