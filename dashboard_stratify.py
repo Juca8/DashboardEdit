@@ -467,7 +467,7 @@ elif menu == "Predicción de Intensivas":
         with open("plantilla_prediccion_aliada.csv", "rb") as file:
             st.download_button("📄 Descargar Plantilla CSV", file, file_name="plantilla_prediccion_aliada.csv")
     except FileNotFoundError:
-        st.warning("❌ No se encontró la plantilla.")
+        st.warning("No se encontró la plantilla.")
 
     # Uploader
     file = st.file_uploader("Carga un archivo CSV para predecir", type="csv")
@@ -493,14 +493,14 @@ elif menu == "Predicción de Intensivas":
             predictions = modelo.predict(X_input)
             new_data["Prediccion_Intensive"] = predictions
 
-            st.success("✅ Predicciones realizadas")
+            st.success("Predicciones realizadas")
             st.dataframe(new_data)
             st.download_button("Descargar resultados", new_data.to_csv(index=False), file_name="predicciones_resultado.csv")
         except Exception as e:
-            st.error(f"❌ Error al predecir: {e}")
+            st.error(f"Error al predecir: {e}")
 # ========== ML Results ==========
 if menu == "Resultados Modelo ML":
-    st.markdown("<h2 style='color:#d4b14c;'>📊 ML Results</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#d4b14c;'>ML Results</h2>", unsafe_allow_html=True)
     
     st.markdown("""
     <p style='color:black; font-size:16px;'>
