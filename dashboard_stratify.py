@@ -197,7 +197,7 @@ st.markdown(
 )
 
 # Mostrar título y subtítulo solo si no es "Inicio"
-if menu not in ["Inicio", "Conócenos"]:
+if menu not in ["Inicio", "Conócenos","Resultados Modelos ML"]:
     st.markdown(
         f"""
         <div style='text-align: center; padding-bottom: 30px;'>
