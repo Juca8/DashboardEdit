@@ -117,10 +117,17 @@ st.markdown(
         .stRadio > div div {
             color: white;
         }
+
+        /* Cambia el color del radio button seleccionado a dorado */
+        [data-baseweb="radio"] label[data-selected="true"] > div:first-child {
+            background-color: #d4b14c !important;
+            border-color: #d4b14c !important;
+        }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 st.sidebar.markdown(
     """
     <div style='margin-top: 30px; margin-bottom: 10px;'>
