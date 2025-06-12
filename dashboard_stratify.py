@@ -39,13 +39,13 @@ st.markdown("""
 
 
     [data-testid="stSidebar"] .stRadio [aria-checked="true"] {
-        color: #bfa14c !important;
+        color: #d4b14c !important;
         font-weight: bold !important;
     }
 
     [data-testid="stSidebar"] .stRadio [aria-checked="true"] svg {
-        color: #bfa14c !important;
-        fill: #bfa14c !important;
+        color: #d4b14c !important;
+        fill: #d4b14c !important;
     }
 
     /* ===== EFECTO HOVER DORADO PREMIUM ===== */
@@ -57,15 +57,15 @@ st.markdown("""
     }
     
     [data-testid="stSidebar"] .stRadio [aria-checked="true"] div[role="presentation"] {
-        border: 2px solid #bfa14c !important;
-        background: #bfa14c !important;
+        border: 2px solid #d4b14c !important;
+        background: #d4b14c !important;
     }
 
     /* Selectbox y radio con fondo gris oscuro y letras blancas */
     [data-testid="stSidebar"] .stSelectbox,
     [data-testid="stSidebar"] .stRadio {
         border-radius: 8px;
-        color: wite !important;
+        color: white !important;
     }
 
      .titulo-container {
