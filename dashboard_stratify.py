@@ -91,6 +91,27 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
+# Logo en la esquina superior izquierda
+st.sidebar.markdown(
+    """
+    <style>
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .logo-container img {
+            height: 50px;
+        }
+    </style>
+    <div class="logo-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Tec_de_Monterrey_logo.svg">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
