@@ -253,9 +253,9 @@ if menu == "Conócenos":
     <br>
     <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; text-align: center;">
         <div style="margin: 10px;">
-            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Juca.JPG" 
+            <img src=" https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edu.JPG" 
                  style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
-            <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
         </div>
         <div style="margin: 10px;">
             <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edgar.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
@@ -266,8 +266,8 @@ if menu == "Conócenos":
             <p style="color:black; font-weight: bold; margin-top: 10px;">Rodrigo Amezcua</p>
         </div>
         <div style="margin: 10px;">
-            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edu.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
-            <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Juca.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
         </div>
     </div>
     """, unsafe_allow_html=True)
