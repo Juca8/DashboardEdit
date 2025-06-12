@@ -192,7 +192,36 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+  #========== NUEVA SECCIÓN: INICIO ==========
+if menu == "Inicio":
+    st.markdown("<h2 style='color:#d4b14c;'>📌 Introduction / Context</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    <p style='color:white; font-size:16px;'>
+    At Ximple, we believe that understanding the consumption behavior of our <strong>Aliadas</strong>—our commercial allies—is essential for sustainable growth. 
+    This project seeks to answer a critical question: <em>how can we use data to better understand and anticipate loan usage?</em><br><br>
+    Through data analysis, visualization, and machine learning, we identified patterns in demand and usage, segmented users into behavioral clusters, 
+    and developed predictive tools. Our dashboard empowers decision-makers at Ximple to shift from reactive responses to proactive strategies 
+    that personalize support and optimize resource allocation across the organization.
+    </p>
+    """, unsafe_allow_html=True)
 
+    st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
+
+    st.markdown("<h2 style='color:#d4b14c;'>✅ Conclusions & Recommendations</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    <p style='color:white; font-size:16px;'>
+    Our findings revealed that approximately <strong>20% of Aliadas</strong> drive the majority of loan activity. These high-usage users often request 
+    loans within short intervals and exhibit strategic behavior. We recommend:<br><br>
+    • Focus segmentation efforts on <strong>intensive users</strong> to increase retention and maximize long-term value.<br>
+    • Integrate predictive variables such as <em>loan interval, product type, and region</em> into dashboards to support operational decisions.<br>
+    • Use <strong>XIMPLE FIJO</strong> as an onboarding product and <strong>XIMPLE OPTIMIZA</strong> for more mature clients.<br>
+    • Prepare operations for <strong>end-of-year demand peaks</strong>.<br><br>
+    By deploying the predictive model and visual tools internally, Ximple can move from descriptive analytics to strategic foresight, 
+    enhancing customer experience and efficiency.
+    </p>
+    """, unsafe_allow_html=True)
+
+    st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
     st.subheader("¿Qué significan los Clusters?")
