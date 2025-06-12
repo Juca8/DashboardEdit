@@ -136,7 +136,7 @@ menu = st.sidebar.radio(
     label="",
     options=[
         "Inicio",
-        "Conócenos"
+        "Conócenos",
         "Resumen de Clusters",
         "Comportamiento de Demanda",
         "Calidad de Pagos",
