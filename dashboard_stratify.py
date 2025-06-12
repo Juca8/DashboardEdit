@@ -99,14 +99,14 @@ st.sidebar.markdown(
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .logo-container img {
-            height: 50px;
+            height: 60px;
         }
     </style>
     <div class="logo-container">
-        <img src="https:https://github.com/Juca8/DashboardEdit/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(2).png?raw=true">
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(2).png?raw=true">
     </div>
     """,
     unsafe_allow_html=True
