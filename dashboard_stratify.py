@@ -142,13 +142,6 @@ menu = st.sidebar.radio(
     key="menu_radio"
 )
  </div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
 # Logo en la esquina superior izquierda
 st.sidebar.markdown(
     """
