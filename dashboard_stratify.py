@@ -498,6 +498,83 @@ elif menu == "Predicción de Intensivas":
             st.download_button("Descargar resultados", new_data.to_csv(index=False), file_name="predicciones_resultado.csv")
         except Exception as e:
             st.error(f"❌ Error al predecir: {e}")
+# ========== ML Results ==========
+if menu == "Resultados Modelo ML":
+    st.markdown("<h2 style='color:#d4b14c;'>📊 ML Results</h2>", unsafe_allow_html=True)
+    
+    st.markdown("""
+    <p style='color:black; font-size:16px;'>
+    To thoroughly analyze the spending patterns of our business partners and customers, we developed a machine learning process combining supervised and unsupervised learning techniques. The goal was not to predict credit risk or communication behavior, but rather to understand the structure, pace, and intensity of user interaction with Ximple's lending system. This modeling approach supports strategic segmentation and product design.
+    </p>
+
+    <h4 style='color:#d4b14c;'>1. Target Variable: Intensive Use of Loans</h4>
+    <p style='color:black; font-size:16px;'>
+    We engineered a binary target variable <strong>"intensive_use"</strong> based on:
+    <ul style="color:black;">
+        <li>More than 3 loans disbursed during the evaluation window</li>
+        <li>At least one instance of simultaneous loans</li>
+        <li>Average interval between loans &lt; 15 days</li>
+    </ul>
+    Users meeting at least 2 of these conditions were labeled as intensive. This design reflects real usage intensity based on transactional behavior, excluding communication/payment interactions.
+    </p>
+
+    <h4 style='color:#d4b14c;'>2. Preprocessing & Data Integrity</h4>
+    <p style='color:black; font-size:16px;'>
+    Data from two sources was merged and missing values imputed using a Monte Carlo simulation method. Features were standardized or encoded. Variables related to communication or payment promises were excluded to avoid data leakage.
+    </p>
+
+    <h4 style='color:#d4b14c;'>3. Model Selection and Evaluation</h4>
+    <p style='color:black; font-size:16px;'>
+    We tested 5 classifiers with cross-validation:
+    <ul style="color:black;">
+        <li>Decision Tree</li>
+        <li>Random Forest</li>
+        <li>Logistic Regression</li>
+        <li>SVC</li>
+        <li>MLPClassifier</li>
+    </ul>
+    Models were evaluated using Balanced Accuracy, Precision, Recall, F1-score and AUC. Initial overfitting was addressed using SMOTE <i>(Synthetic Minority Oversampling Technique)</i> prior to train-test split.
+    </p>
+
+    <h4 style='color:#d4b14c;'>4. Best Model & Optimization</h4>
+    <p style='color:black; font-size:16px;'>
+    The best performance was achieved with <strong>Logistic Regression</strong> trained on the top 5 features:
+    <ul style="color:black;">
+        <li><strong>dias_promedio</strong>: average interval between loans</li>
+        <li><strong>customer_region</strong>: mapped from state info</li>
+        <li><strong>DisbursementMeans</strong>: money delivery method</li>
+        <li><strong>credit_status</strong>: includes Late_Payment indicator</li>
+        <li><strong>canal_ajustado</strong>: channel used to acquire loan</li>
+    </ul>
+    Using GridSearchCV, we tuned regularization strength and penalty type. The final model reached a balanced accuracy of <strong>99.74%</strong> with high interpretability.
+    </p>
+
+    <h4 style='color:#d4b14c;'>5. Clustering & Behavioral Segmentation</h4>
+    <p style='color:black; font-size:16px;'>
+    We performed unsupervised clustering using <strong>K-Means + PCA</strong> based only on loan behavior:
+    <ul style="color:black;">
+        <li>cuotas_pagadas</li>
+        <li>cuotas_tarde</li>
+        <li>cuotas_mora</li>
+        <li>dias_promedio</li>
+        <li>Total_llamadas</li>
+    </ul>
+    The model revealed three clear user profiles:
+    <ol style="color:black;">
+        <li>Frequent users with timely payments</li>
+        <li>High-volume users with high delinquency</li>
+        <li>Low-activity users</li>
+    </ol>
+    These profiles enable personalized solutions, optimized resource allocation, and better product targeting strategies.
+    </p>
+    """, unsafe_allow_html=True)
+
+
+
+
+
+
+
 # ========== FOOTER ==========
 st.markdown("---")
 st.caption("Ximple Dashboard · Proyecto Final de Consultoría")
