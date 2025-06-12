@@ -91,6 +91,27 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
+st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
+
+cluster_names = {
+    0: "Pagos Frecuentes y Pocos Atrasos",
+    1: "Alto Volumen y Alta Morosidad",
+    2: "Baja Actividad Crediticia"
+}
+cluster_display = [f"{k} – {v}" for k, v in cluster_names.items()]
+
+# Etiqueta del selectbox personalizada
+st.sidebar.markdown("<p style='color:white; font-size:18px; font-weight:bold;'>Selecciona el tipo de Aliada:", unsafe_allow_html=True)
+cluster_str = st.sidebar.selectbox("", cluster_display)
+
+cluster_sel = int(cluster_str.split(" – ")[0])
+df_cluster = df[df['cluster_kmeans'] == cluster_sel]
+df_cluster = df_cluster.copy()
+df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
+
+
+
+
 # Logo en la esquina superior izquierda
 st.sidebar.markdown(
     """
@@ -111,24 +132,6 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True
 )
-
-st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
-
-cluster_names = {
-    0: "Pagos Frecuentes y Pocos Atrasos",
-    1: "Alto Volumen y Alta Morosidad",
-    2: "Baja Actividad Crediticia"
-}
-cluster_display = [f"{k} – {v}" for k, v in cluster_names.items()]
-
-# Etiqueta del selectbox personalizada
-st.sidebar.markdown("<p style='color:white; font-size:18px; font-weight:bold;'>Selecciona el tipo de Aliada:", unsafe_allow_html=True)
-cluster_str = st.sidebar.selectbox("", cluster_display)
-
-cluster_sel = int(cluster_str.split(" – ")[0])
-df_cluster = df[df['cluster_kmeans'] == cluster_sel]
-df_cluster = df_cluster.copy()
-df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 
 # ========== MENÚ DE NAVEGACIÓN (Texto grande, fuerte y elegante) ==========
 st.markdown(
