@@ -210,14 +210,14 @@ if menu == "Inicio":
     st.markdown("<h2 style='color:#d4b14c;'> Conclusions & Recommendations</h2>", unsafe_allow_html=True)
     st.markdown("""
     <p style='color:black; font-size:16px;'>
-    Our findings revealed that approximately <strong>20% of Aliadas</strong> drive the majority of loan activity. These high-usage users often request 
-    loans within short intervals and exhibit strategic behavior. We recommend:<br><br>
-    • Focus segmentation efforts on <strong>intensive users</strong> to increase retention and maximize long-term value.<br>
-    • Integrate predictive variables such as <em>loan interval, product type, and region</em> into dashboards to support operational decisions.<br>
-    • Use <strong>XIMPLE FIJO</strong> as an onboarding product and <strong>XIMPLE OPTIMIZA</strong> for more mature clients.<br>
-    • Prepare operations for <strong>end-of-year demand peaks</strong>.<br><br>
-    By deploying the predictive model and visual tools internally, Ximple can move from descriptive analytics to strategic foresight, 
-    enhancing customer experience and efficiency.
+   Nuestros hallazgos revelaron que aproximadamente el 20% de las Aliadas generan la mayor parte de la actividad crediticia. Estas usuarias de alto uso suelen solicitar préstamos en intervalos cortos y muestran un comportamiento estratégico. Recomendamos:
+
+• Enfocar los esfuerzos de segmentación en las usuarias intensivas para aumentar la retención y maximizar el valor a largo plazo.
+• Integrar variables predictivas como el intervalo entre préstamos, el tipo de producto y la región en los dashboards para respaldar decisiones operativas.
+• Utilizar XIMPLE FIJO como producto de entrada y XIMPLE OPTIMIZA para clientas más maduras.
+• Preparar las operaciones para los picos de demanda de fin de año.
+
+Al implementar internamente el modelo predictivo y las herramientas visuales, Ximple puede pasar de una analítica descriptiva a una estrategia proactiva, mejorando la experiencia del cliente y la eficiencia operativa.
     </p>
     """, unsafe_allow_html=True)
 
