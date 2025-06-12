@@ -500,7 +500,7 @@ elif menu == "Predicción de Intensivas":
             st.error(f"Error al predecir: {e}")
 # ========== ML Results ==========
 if menu == "Resultados Modelo ML":
-    st.markdown("<h2 style='color:#d4b14c;'>📊 ML Results</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#d4b14c;'>ML Results</h2>", unsafe_allow_html=True)
     
     st.markdown("""
     <p style='color:black; font-size:16px;'>
