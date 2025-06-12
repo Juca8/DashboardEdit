@@ -116,6 +116,18 @@ df_cluster = df_cluster.copy()
 df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 
 # ========== MENÚ DE NAVEGACIÓN (Texto grande, fuerte y elegante) ==========
+st.markdown(
+    """
+    <style>
+        /* Cambia color del texto de las opciones de radio */
+        .stRadio > div div {
+            color: white;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.sidebar.markdown(
     """
     <div style='margin-top: 30px; margin-bottom: 10px;'>
