@@ -109,30 +109,6 @@ df_cluster = df[df['cluster_kmeans'] == cluster_sel]
 df_cluster = df_cluster.copy()
 df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 
-
-
-
-# Logo en la esquina superior izquierda
-st.sidebar.markdown(
-    """
-    <style>
-        .logo-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .logo-container img {
-            height: 100px;
-        }
-    </style>
-    <div class="logo-container">
-        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Logotipo%20STRATIFY.png?raw=true">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
 # ========== MENÚ DE NAVEGACIÓN (Texto grande, fuerte y elegante) ==========
 st.markdown(
     """
@@ -164,6 +140,26 @@ menu = st.sidebar.radio(
         "Predicción de Intensivas"
     ],
     key="menu_radio"
+)
+# Logo en la esquina superior izquierda
+st.sidebar.markdown(
+    """
+    <style>
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .logo-container img {
+            height: 100px;
+        }
+    </style>
+    <div class="logo-container">
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Logotipo%20STRATIFY.png?raw=true">
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
 # ========== TÍTULO CON LOGO CENTRADO Y ELEGANTE ==========
