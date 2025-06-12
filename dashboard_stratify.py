@@ -256,30 +256,31 @@ if menu == "Conócenos":
 
     # Galería de imágenes y nombres reales
     st.markdown("""
-    <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
+<div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
 
-        <div style='margin: 10px;'>
-            <img src="https://github.com/Juca8/DashboardEdit/blob/main/Juca.JPG?raw=true" style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Juan Carlos Contreras</p>
-        </div>
-
-        <div style='margin: 10px;'>
-            <img src="https://github.com/Juca8/DashboardEdit/blob/main/Edgar.JPG?raw=true" style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Edgar Vega</p>
-        </div>
-
-        <div style='margin: 10px;'>
-            <img src="https://github.com/Juca8/DashboardEdit/blob/main/ROD.JPG?raw=true" style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Rodrigo Amezcua</p>
-        </div>
-
-        <div style='margin: 10px;'>
-            <img src="https://github.com/Juca8/DashboardEdit/blob/main/Edu.JPG?raw=true" style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
-            <p style='color:black; font-weight: bold; margin-top: 10px;'>Eduardo Hernández</p>
-        </div>
-
+    <div style='margin: 10px;'>
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Juca.JPG?raw=true" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+        <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
     </div>
-    """, unsafe_allow_html=True)
+
+    <div style='margin: 10px;'>
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Edgar.JPG?raw=true" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+        <p style="color:black; font-weight: bold; margin-top: 10px;">Edgar Vega</p>
+    </div>
+
+    <div style='margin: 10px;'>
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/ROD.JPG?raw=true" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+        <p style="color:black; font-weight: bold; margin-top: 10px;">Rodrigo Amezcua</p>
+    </div>
+
+    <div style='margin: 10px;'>
+        <img src="https://github.com/Juca8/DashboardEdit/blob/main/Edu.JPG?raw=true" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+        <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+
 
     # Pie de página negro
     st.markdown("""
