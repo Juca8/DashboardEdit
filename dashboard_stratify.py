@@ -18,7 +18,7 @@ st.markdown("""
     /* ===== ESTÉTICA STRATIFY ELEGANTE Y SOFISTICADA ===== */
     body, .stApp {
         font-family: 'Segoe UI', sans-serif;
-        background-color: white;
+        background-color: black;
         
     }
 
