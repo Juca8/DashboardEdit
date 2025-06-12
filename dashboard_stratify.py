@@ -331,7 +331,14 @@ if menu == "Resumen de Clusters":
 
 
 # ========== MÉTRICAS ==========
-if menu != "Inicio" or "Conócenos":
+if menu != "Inicio" :
+    st.subheader("Métricas del Cluster")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Total Aliadas", len(df_cluster))
+    col2.metric("% Intensivas", f"{100 * df_cluster['intensive_use'].astype(int).mean():.1f}%")
+    col3.metric("Prom. días entre préstamos", f"{df_cluster['dias_promedio'].mean():.1f} días")
+
+if menu != "Conócenos" :
     st.subheader("Métricas del Cluster")
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Aliadas", len(df_cluster))
