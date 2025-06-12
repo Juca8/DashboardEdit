@@ -181,18 +181,30 @@ def get_base64_image(image_path):
 
 image_base64 = get_base64_image("StratifyLogo.png")
 
+   # Mostrar siempre el logo
+st.markdown(
+    f"""
+    <div style='text-align: center; padding: 30px 0 10px 0;'>
+        <img src='data:image/png;base64,{image_base64}' width='200'
+             style='margin-bottom: 15px; border-radius: 16px;
+                    box-shadow: 0 6px 20px rgba(0,0,0,0.15);'/>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Mostrar título y subtítulo solo si no es "Inicio"
+if menu != "Inicio":
     st.markdown(
         f"""
-        <div style='text-align: center; padding: 30px 0 40px 0;'>
-            <img src='data:image/png;base64,{image_base64}' width='200'
-                 style='margin-bottom: 15px; border-radius: 16px;
-                        box-shadow: 0 6px 20px rgba(0,0,0,0.15);'/>
+        <div style='text-align: center; padding-bottom: 30px;'>
             <h1 style='font-family: "Segoe UI", sans-serif; margin-bottom: 0;'>Ximple – Dashboard de Comportamiento Crediticio</h1>
             <h3 style='color: #bfa14c; font-weight: normal; margin-top: 0;'>{cluster_names[cluster_sel]}</h3>
         </div>
         """,
         unsafe_allow_html=True
     )
+
 
   #========== NUEVA SECCIÓN: INICIO ==========
 if menu == "Inicio":
