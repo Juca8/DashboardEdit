@@ -131,7 +131,7 @@ st.markdown(
 st.sidebar.markdown(
     """
     <div style='margin-top: 30px; margin-bottom: 10px;'>
-        <p style='color: white; font-size: 18px; font-weight: bold;'>Secciones del Dashboard:
+        <p style='color: white; font-size: 18px; font-weight: bold;'>Secciones del Dashboard:</p>
     </div>
     """,
     unsafe_allow_html=True
