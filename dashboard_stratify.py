@@ -29,7 +29,7 @@ st.markdown("""
 
     /* Forzar color blanco en todo el contenido del sidebar */
     [data-testid="stSidebar"] * {
-        color: white !important;
+        color: black !important;
     }
     
   
