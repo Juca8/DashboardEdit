@@ -18,7 +18,7 @@ st.markdown("""
     /* ===== ESTÉTICA STRATIFY ELEGANTE Y SOFISTICADA ===== */
     body, .stApp {
         font-family: 'Segoe UI', sans-serif;
-        background-color: black;
+        background-color: white;
         
     }
 
@@ -97,7 +97,7 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
-st.sidebar.markdown("<h2 style='color:black; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='color:white; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
     0: "Pagos Frecuentes y Pocos Atrasos",
@@ -121,7 +121,7 @@ st.markdown(
     <style>
         /* Cambia color del texto de las opciones de radio */
         .stRadio > div div {
-            color: white;
+            color: black;
         }
     </style>
     """,
