@@ -136,6 +136,7 @@ menu = st.sidebar.radio(
     label="",
     options=[
         "Inicio",
+        "Conócenos"
         "Resumen de Clusters",
         "Comportamiento de Demanda",
         "Calidad de Pagos",
@@ -192,6 +193,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
   #========== NUEVA SECCIÓN: INICIO ==========
 if menu == "Inicio":
     st.markdown("<h2 style='color:#d4b14c;'> Introduction</h2>", unsafe_allow_html=True)
@@ -230,7 +232,48 @@ Al implementar internamente el modelo predictivo y las herramientas visuales, Xi
 
     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
 
-    
+#========== NUEVA SECCIÓN: CONOCENOS  ==========    
+if menu == "Conócenos":
+    # Encabezado dorado
+    st.markdown("""
+    <div style="background-color:#d4b14c; padding: 20px; border-radius: 10px; text-align: center;">
+        <h1 style="color:white; font-size: 36px; margin: 0;">NUESTRO EQUIPO</h1>
+    </div>
+    <br>
+    """, unsafe_allow_html=True)
+
+    # Galería de imágenes y nombres
+    st.markdown("""
+    <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
+
+        <div style='margin: 10px;'>
+            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Edgar Vega</p>
+        </div>
+
+        <div style='margin: 10px;'>
+            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Eduardo Hernández</p>
+        </div>
+
+        <div style='margin: 10px;'>
+            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Juan Carlos Contreras</p>
+        </div>
+
+        <div style='margin: 10px;'>
+            <img src='https://via.placeholder.com/150' style='border-radius: 50%; height: 150px; width: 150px; object-fit: cover;'>
+            <p style='color:black; font-weight: bold; margin-top: 10px;'>Juan Rodrigo Amezcua</p>
+        </div>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Pie de página negro
+    st.markdown("""
+    <div style="background-color:black; height: 40px; margin-top: 40px; border-radius: 5px;"></div>
+    """, unsafe_allow_html=True)
+
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
     st.subheader("¿Qué significan los Clusters?")
