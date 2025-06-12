@@ -256,7 +256,7 @@ if menu == "Conócenos":
 
     # Galería de imágenes y nombres reales
   st.markdown('''
-<div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
+    <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
 
     <div style='margin: 10px;'>
         <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Juca.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
