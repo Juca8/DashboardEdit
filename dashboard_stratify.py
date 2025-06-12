@@ -246,7 +246,6 @@ Al implementar internamente el modelo predictivo y las herramientas visuales, Xi
 
 #========== NUEVA SECCIÓN: CONOCENOS  ==========    
 if menu == "Conócenos":
-    # Encabezado dorado
     st.markdown("""
     <div style="background-color:#d4b14c; padding: 20px; border-radius: 10px; text-align: center;">
         <h1 style="color:white; font-size: 36px; margin: 0;">NUESTRO EQUIPO</h1>
@@ -254,32 +253,32 @@ if menu == "Conócenos":
     <br>
     """, unsafe_allow_html=True)
 
-    # Galería de imágenes y nombres reales
-  st.markdown('''
+    st.markdown('''
     <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
 
-    <div style='margin: 10px;'>
-        <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Juca.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
-        <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
-    </div>
+        <div style='margin: 10px;'>
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Juca.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
+        </div>
 
-    <div style='margin: 10px;'>
-        <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edgar.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
-        <p style="color:black; font-weight: bold; margin-top: 10px;">Edgar Vega</p>
-    </div>
+        <div style='margin: 10px;'>
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edgar.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Edgar Vega</p>
+        </div>
 
-    <div style='margin: 10px;'>
-        <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/ROD.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
-        <p style="color:black; font-weight: bold; margin-top: 10px;">Rodrigo Amezcua</p>
-    </div>
+        <div style='margin: 10px;'>
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/ROD.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Rodrigo Amezcua</p>
+        </div>
 
-    <div style='margin: 10px;'>
-        <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edu.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
-        <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
-    </div>
+        <div style='margin: 10px;'>
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edu.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
+        </div>
 
-</div>
-''', unsafe_allow_html=True)
+    </div>
+    ''', unsafe_allow_html=True)
+
 
     # Pie de página negro
     st.markdown("""
