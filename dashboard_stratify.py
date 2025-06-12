@@ -257,6 +257,20 @@ if menu == "Conócenos":
                  style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
             <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
         </div>
+        <div style="margin: 10px;">
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edgar.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Edgar Vega</p>
+        </div>
+
+        <div style="margin: 10px;">
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/ROD.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Rodrigo Amezcua</p>
+        </div>
+
+        <div style="margin: 10px;">
+            <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edu.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
+            <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
