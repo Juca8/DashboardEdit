@@ -225,9 +225,7 @@ Esta falta de enfoque predictivo limitaba la capacidad de asignar recursos de ma
 • Utilizar <strong>XIMPLE FIJO</strong> como producto de entrada y <strong>XIMPLE OPTIMIZA</strong> para clientas más maduras.<br>
 • Preparar las operaciones para los <strong>picos de demanda de fin de año</strong>.<br><br>
 Al implementar internamente el modelo predictivo y las herramientas visuales, Ximple puede pasar de una analítica descriptiva a una visión estratégica, mejorando la experiencia del cliente y la eficiencia operativa.
-
-
-    </p>
+</p>
     """, unsafe_allow_html=True)
 
     st.markdown("<hr style='border:1px solid #d4b14c;'>", unsafe_allow_html=True)
