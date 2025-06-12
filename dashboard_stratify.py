@@ -15,6 +15,31 @@ st.set_page_config(page_title="Ximple Dashboard", layout="wide", initial_sidebar
 
 st.markdown("""
 <style>
+/* Mantener texto en blanco */
+.stRadio label {
+    color: white !important;
+}
+
+/* Color DORADO real para el botón activo en sidebar */
+[data-testid="stSidebar"] .stRadio [aria-checked="true"] svg {
+    stroke: #d4b14c !important;
+    fill: #d4b14c !important;
+}
+
+/* Opcional: color del texto del activo */
+[data-testid="stSidebar"] .stRadio [aria-checked="true"] > div:nth-child(2) {
+    font-weight: bold;
+    color: white !important;
+}
+
+/* Opcional: color de borde del radio al pasar el mouse */
+[data-testid="stSidebar"] .stRadio label:hover svg {
+    stroke: #d4b14c !important;
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
     /* ===== ESTÉTICA STRATIFY ELEGANTE Y SOFISTICADA ===== */
     body, .stApp {
         font-family: 'Segoe UI', sans-serif;
