@@ -15,91 +15,68 @@ st.set_page_config(page_title="Ximple Dashboard", layout="wide", initial_sidebar
 
 st.markdown("""
 <style>
-/* Mantener texto en blanco */
-.stRadio label {
+/* === FONDO Y ESTILO GENERAL === */
+body, .stApp {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+}
+
+/* === SIDEBAR === */
+[data-testid="stSidebar"] {
+    background-color: #1e1e1e !important;
+}
+
+/* === BOTONES GENERALES === */
+.metric-label, .metric-value, .stButton>button, .stDownloadButton>button {
+    color: white !important;
+    background-color: #d4b14c !important;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+}
+.stButton>button:hover,
+.stDownloadButton>button:hover {
+    background-color: #c19b3a !important;
+    color: white !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* === RADIO BUTTONS === */
+
+/* Color del texto */
+[data-testid="stSidebar"] .stRadio label {
     color: white !important;
 }
 
-/* Color DORADO real para el botón activo en sidebar */
+/* Cambia el círculo del botón activo a dorado */
 [data-testid="stSidebar"] .stRadio [aria-checked="true"] svg {
     stroke: #d4b14c !important;
     fill: #d4b14c !important;
 }
 
-/* Opcional: color del texto del activo */
+/* Opcion activa: texto blanco y negrita */
 [data-testid="stSidebar"] .stRadio [aria-checked="true"] > div:nth-child(2) {
     font-weight: bold;
     color: white !important;
 }
 
-/* Opcional: color de borde del radio al pasar el mouse */
+/* Hover opcional para svg */
 [data-testid="stSidebar"] .stRadio label:hover svg {
     stroke: #d4b14c !important;
 }
-</style>
-""", unsafe_allow_html=True)
-st.markdown("""
-<style>
-    /* ===== ESTÉTICA STRATIFY ELEGANTE Y SOFISTICADA ===== */
-    body, .stApp {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: white;
-        
-    }
 
-    /* Fondo gris oscuro en sidebar */
-    [data-testid="stSidebar"] {
-        background-color: #1e1e1e !important;
-    }
+/* Radio button borde extra para visibilidad */
+[data-testid="stSidebar"] .stRadio [aria-checked="true"] div[role="presentation"] {
+    border: 2px solid #d4b14c !important;
+    background: #d4b14c !important;
+}
 
-
-    /* Botones generales */
-    .metric-label, .metric-value, .stButton>button, .stDownloadButton>button {
-        color: white !important;
-        background-color: #bfa14c !important;
-        border-radius: 6px;
-        border: none;
-        font-weight: 600;
-    }
-
-
-    [data-testid="stSidebar"] .stRadio [aria-checked="true"] {
-        color: #d4b14c !important;
-        font-weight: bold !important;
-    }
-
-    [data-testid="stSidebar"] .stRadio [aria-checked="true"] svg {
-        color: #d4b14c !important;
-        fill: #d4b14c !important;
-    }
-
-    /* ===== EFECTO HOVER DORADO PREMIUM ===== */
-    .stButton>button:hover,
-    .stDownloadButton>button:hover {
-        background-color: #d4b14c !important;
-        color: white !important;
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    [data-testid="stSidebar"] .stRadio [aria-checked="true"] div[role="presentation"] {
-        border: 2px solid #d4b14c !important;
-        background: #d4b14c !important;
-    }
-
-    /* Selectbox y radio con fondo gris oscuro y letras blancas */
-    [data-testid="stSidebar"] .stSelectbox,
-    [data-testid="stSidebar"] .stRadio {
-        border-radius: 8px;
-        color: white !important;
-    }
-
-     .titulo-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-      .block-container { padding: 1rem 2rem; }
-   
+/* Selectbox borde blanco */
+[data-testid="stSidebar"] .stSelectbox,
+[data-testid="stSidebar"] .stRadio {
+    border-radius: 8px;
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
