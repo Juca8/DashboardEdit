@@ -97,6 +97,17 @@ modelo = load_model()
 df = load_data()
 
 # ========== SIDEBAR CLUSTER (Texto blanco, grande y en negritas) ==========
+st.markdown(
+    """
+    <style>
+        /* Cambia color del texto de las opciones de radio */
+        .stRadio > div div {
+            color: black;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.sidebar.markdown("<h2 style='color:black; font-size:24px; font-weight:bold;'>Filtros</h2>", unsafe_allow_html=True)
 
 cluster_names = {
