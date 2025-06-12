@@ -249,6 +249,8 @@ if menu == "Comportamiento de Demanda":
     tipo_prestamo = df_cluster.groupby(["LoanType", "RecipientType"]).size().reset_index(name="count")
     src1 = ColumnDataSource(tipo_prestamo)
     fig1 = figure(x_range=tipo_prestamo["LoanType"].unique(), width=800, height=400, title="Tipo de Préstamo")
+    fig1.title.text_font_size = "20pt"  # Tamaño
+    fig1.title.text_font_style = "bold"  # Negritas
     fig1.vbar(x="LoanType", top="count", width=0.7, source=src1,
               legend_field="RecipientType",
               color=factor_cmap("RecipientType", palette=["#bfa14c", "#000000"], factors=["Ally", "Client"]))
