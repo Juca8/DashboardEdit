@@ -254,24 +254,24 @@ if menu == "Conócenos":
     """, unsafe_allow_html=True)
 
     st.markdown('''
-    <div style='display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;'>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
 
-        <div style='margin: 10px;'>
+        <div style="margin: 10px;">
             <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Juca.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
             <p style="color:black; font-weight: bold; margin-top: 10px;">Juan Carlos Contreras</p>
         </div>
 
-        <div style='margin: 10px;'>
+        <div style="margin: 10px;">
             <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edgar.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
             <p style="color:black; font-weight: bold; margin-top: 10px;">Edgar Vega</p>
         </div>
 
-        <div style='margin: 10px;'>
+        <div style="margin: 10px;">
             <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/ROD.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
             <p style="color:black; font-weight: bold; margin-top: 10px;">Rodrigo Amezcua</p>
         </div>
 
-        <div style='margin: 10px;'>
+        <div style="margin: 10px;">
             <img src="https://raw.githubusercontent.com/Juca8/DashboardEdit/main/Edu.JPG" style="border-radius: 50%; height: 150px; width: 150px; object-fit: cover;">
             <p style="color:black; font-weight: bold; margin-top: 10px;">Eduardo Hernández</p>
         </div>
@@ -279,11 +279,10 @@ if menu == "Conócenos":
     </div>
     ''', unsafe_allow_html=True)
 
-
-    # Pie de página negro
     st.markdown("""
     <div style="background-color:black; height: 40px; margin-top: 40px; border-radius: 5px;"></div>
     """, unsafe_allow_html=True)
+
 
 # ========== NUEVA SECCIÓN: RESUMEN DE CLUSTERS ==========
 if menu == "Resumen de Clusters":
