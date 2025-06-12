@@ -110,18 +110,31 @@ df_cluster = df_cluster.copy()
 df_cluster["intensive_use"] = df_cluster["intensive_use"].astype(str)
 
 # ========== MENÚ DE NAVEGACIÓN (Texto grande, fuerte y elegante) ==========
-st.markdown(
-    """
-    <style>
-        /* Cambia color del texto de las opciones de radio */
-        .stRadio > div div {
-            color: white;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+<style>
+    /* Mantener texto blanco en radios */
+    .stRadio label {
+        color: white !important;
+    }
 
+    /* Forzar color dorado al círculo seleccionado (usualmente SVG circle) */
+    .stRadio [aria-checked="true"] svg {
+        stroke: #d4b14c !important;
+        fill: #d4b14c !important;
+    }
+
+    /* Opcional: cambia borde en hover */
+    .stRadio label:hover svg {
+        stroke: #d4b14c !important;
+    }
+
+    /* Corregir color texto de opción seleccionada */
+    .stRadio [aria-checked="true"] > div:nth-child(2) {
+        color: white !important;
+        font-weight: bold;
+    }
+</style>
+""", unsafe_allow_html=True)
 st.sidebar.markdown(
     """
     <div style='margin-top: 30px; margin-bottom: 10px;'>
