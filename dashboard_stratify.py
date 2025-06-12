@@ -331,7 +331,7 @@ if menu == "Resumen de Clusters":
 
 
 # ========== MÉTRICAS ==========
-if menu != "Inicio":
+if menu != "Inicio", "Conócenos":
     st.subheader("Métricas del Cluster")
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Aliadas", len(df_cluster))
