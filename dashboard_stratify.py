@@ -287,6 +287,8 @@ elif menu == "Calidad de Pagos":
 
     src2 = ColumnDataSource(df_cluster)
     fig2 = figure(width=800, height=400, title="Frecuencia vs. Simultaneidad")
+    fig2.title.text_font_size = "16pt"  # Tamaño
+    fig2.title.text_font_style = "bold"  # Negritas
     fig2.circle(x="dias_promedio", y="prestamos_outstanding", size=6, source=src2,
                 color=factor_cmap('intensive_use', palette=['#bfa14c', '#000000'], factors=['0', '1']),
                 legend_field="intensive_use")
@@ -295,6 +297,8 @@ elif menu == "Calidad de Pagos":
     tipo_mora = df_cluster.groupby("RecipientType")["cuotas_mora"].mean().reset_index()
     src3 = ColumnDataSource(tipo_mora)
     fig3 = figure(x_range=tipo_mora["RecipientType"], width=800, height=400, title="Mora por Tipo de Cliente")
+    fig3.title.text_font_size = "16pt"  # Tamaño
+    fig3.title.text_font_style = "bold"  # Negritas
     fig3.vbar(x="RecipientType", top="cuotas_mora", width=0.5, source=src3, color="#bfa14c")
     st.bokeh_chart(fig3, use_container_width=True)
 
@@ -302,6 +306,8 @@ elif menu == "Calidad de Pagos":
         mora_contacto = df_cluster.groupby("contactability_level")["cuotas_mora"].mean().reset_index()
         src7 = ColumnDataSource(mora_contacto)
         fig7 = figure(x_range=mora_contacto["contactability_level"], width=800, height=400, title="Mora por Contactabilidad")
+        fig7.title.text_font_size = "16pt"  # Tamaño
+        fig7.title.text_font_style = "bold"  # Negritas
         fig7.vbar(x="contactability_level", top="cuotas_mora", width=0.5, source=src7, color="#bfa14c")
         st.bokeh_chart(fig7, use_container_width=True)
 
@@ -310,6 +316,8 @@ elif menu == "Calidad de Pagos":
         mora_pago["effective_payer"] = mora_pago["effective_payer"].astype(str)
         src8 = ColumnDataSource(mora_pago)
         fig8 = figure(x_range=mora_pago["effective_payer"], width=800, height=400, title="Mora por cumplimiento")
+        fig8.title.text_font_size = "16pt"  # Tamaño
+        fig8.title.text_font_style = "bold"  # Negritas
         fig8.vbar(x="effective_payer", top="cuotas_mora", width=0.5, source=src8, color="#bfa14c")
         st.bokeh_chart(fig8, use_container_width=True)
 
@@ -320,6 +328,8 @@ elif menu == "Distribución Geográfica":
     region.columns = ["Región", "Total"]
     src4 = ColumnDataSource(region)
     fig4 = figure(x_range=region["Región"], width=800, height=400, title="Clientes por Región")
+    fig4.title.text_font_size = "16pt"  # Tamaño
+    fig4.title.text_font_style = "bold"  # Negritas
     fig4.vbar(x="Región", top="Total", width=0.6, source=src4, color="#bfa14c")
     st.bokeh_chart(fig4, use_container_width=True)
 
